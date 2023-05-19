@@ -5,6 +5,46 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%% ``commonly used packages`` %%%%%%%%%%%%%%%%%%
+\usepackage{amsfonts,amsmath,amsthm,amssymb}
+\usepackage{enumitem} 
+%%%%%%%%%%%%%%%%%%% end of ``commonly used packages`` %%%%%%%%%%%%%%%%%%
+
+\usepackage[hidelinks,linktoc=all]{hyperref}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% "for references" %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% to use bibtex, comment the following lines and adapt the end of the document
+%%%%%%%%%
+\usepackage[backend=biber,style=numeric,hyperref=true,isbn=false,doi=false]{biblatex}
+\addbibresource{numericals.bib}
+\addbibresource{preprints.bib}
+\addbibresource{refs.bib}
+ %%%%%%%%%%%%%%%%%%%%%%%%%% end of "for references" %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% ``theorems`` %%%%%%%%%%%%%%%%%%%%%%%%%
+%\newtheorem{theorem}{Theorem}[section] %(uncomment to number per section)
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+%\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{fact}[theorem]{Fact}
+
+\newtheorem{defn}[theorem]{Definition}
+
+\theoremstyle{remark} 
+\newtheorem{example}[theorem]{Example}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{question}[theorem]{Question}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{definition}[theorem]{Definition}
+%%
+\newtheorem*{remark*}{Remark}
+\newtheorem{claim}{Claim}
+\newtheorem{code}[theorem]{GAP-code}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% end of ``theorems`` %%%%%%%%%%%%%%%%%%%
 
 \title{Some references on numerical semigroups}
 \author{Manuel Delgado
@@ -51,7 +91,7 @@ This document is associated to my bibtex database on numerical semigroups.
 %%
 %%uncomment to use bibtex
 %\bibliographystyle{plainurl}
-%\bibliography{refs.bib}
+%\bibliography{numericals.bib}
 %%%%%%%%%
 %\input{refs}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
